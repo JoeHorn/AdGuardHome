@@ -1,4 +1,4 @@
-# AdGuarHome
+# AdGuardHome
 
 apt install aptitude docker.io lm-sensors snmpd chrony
 
