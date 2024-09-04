@@ -1,6 +1,6 @@
 # AdGuardHome
 
-apt install aptitude docker.io lm-sensors snmpd chrony dnsutils
+apt install rsyslog aptitude docker.io lm-sensors snmpd chrony dnsutils
 
 docker pull adguard/adguardhome
 
