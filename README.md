@@ -1,6 +1,6 @@
 # AdGuardHome-Raspbian
 
-`apt install aptitude chrony curl dnsutils docker.io iperf3 lm-sensors net-tools rsyslog snmpd wavemon`
+`apt install aptitude chrony curl dnsutils docker.io iperf3 lm-sensors net-tools rsync rsyslog snmpd wavemon`
 
 `mkdir -p /home/docker/adguardhome/vol/conf /home/docker/adguardhome/vol/work`
 
