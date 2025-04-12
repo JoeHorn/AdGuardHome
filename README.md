@@ -1,9 +1,12 @@
-# AdGuardHome
+# AdGuardHome-Raspbian
 
-`apt install rsyslog aptitude docker.io lm-sensors snmpd chrony dnsutils iperf3`
+`apt install aptitude chrony curl dnsutils docker.io iperf3 lm-sensors net-tools rsyslog snmpd wavemon`
 
-docker pull adguard/adguardhome
+`mkdir -p /home/docker/adguardhome/vol/conf /home/docker/adguardhome/vol/work`
 
-mkdir -p /home/docker/volumes/adguard/conf /home/docker/volumes/adguard/work
-
-docker run -d --name adguardhome --restart unless-stopped -v /home/docker/volumes/adguard/conf:/opt/adguardhome/conf -v /home/docker/volumes/adguard/work:/opt/adguardhome/work --network host adguard/adguardhome
+```
+docker run -d --name adguardhome --restart unless-stopped --network host \
+  -v /home/docker/adguardhome/vol/conf:/opt/adguardhome/conf \
+  -v /home/docker/adguardhome/vol/work:/opt/adguardhome/work \
+  adguard/adguardhome
+```
